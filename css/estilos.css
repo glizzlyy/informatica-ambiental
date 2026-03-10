@@ -19,30 +19,50 @@ body {
   display: flex;
 }
 
-/* ===== SIDEBAR (FIJO) ===== */
+/* ===== SIDEBAR (ÍNDICE VERTICAL) ===== */
 .sidebar {
   width: 280px;
   height: 100vh;
   position: fixed;
-  background: rgba(2, 6, 23, 0.9);
+  left: 0;
+  top: 0;
+  background: rgba(2, 6, 23, 0.8); /* Ajustado para que se vea */
   backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
   border-right: 1px solid var(--glass-border);
   padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
   z-index: 1000;
 }
 
-.sidebar h2 { color: white; text-align: center; font-size: 0.9rem; letter-spacing: 2px; margin-bottom: 30px; }
-
-.sidebar a {
-  display: block;
-  color: var(--text-muted);
-  text-decoration: none;
-  padding: 12px 20px;
-  border-radius: 10px;
-  transition: var(--transition);
+.sidebar h2 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #ffffff; /* Título del sidebar en blanco */
+  margin-bottom: 30px;
+  text-align: center;
 }
 
-.sidebar a:hover { background: rgba(56, 189, 248, 0.1); color: white; transform: translateX(5px); }
+.sidebar a {
+  color: var(--text-muted);
+  text-decoration: none;
+  padding: 14px 20px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  transition: var(--transition);
+  border: 1px solid transparent;
+}
+
+.sidebar a:hover {
+  background: rgba(56, 189, 248, 0.1);
+  color: white;
+  border-color: var(--glass-border);
+  transform: translateX(5px);
+}
+
 
 /* ===== CONTENIDO (AGRUPADO) ===== */
 .contenido {
