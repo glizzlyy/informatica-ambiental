@@ -1,112 +1,227 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Informática Ambiental</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
-    <style>
-
-body{
-    font-family: Arial, sans-serif;
-    margin:0;
-    background-image: url("https://images.unsplash.com/photo-1469474968028-56623f02e42e");
-    background-size: cover;
-    background-attachment: fixed;
+<style>
+/* ===== VARIABLES ECO-PROFESIONAL ===== */
+:root {
+  --bg-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e');
+  --primary: #10b981; /* Verde Esmeralda */
+  --primary-glow: rgba(16, 185, 129, 0.3);
+  --secondary: #3b82f6; /* Azul para contraste tech */
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --glass-bg: rgba(15, 23, 42, 0.8);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.sidebar{
-    height:100vh;
-    width:230px;
-    position:fixed;
-    background:#1b5e20;
-    padding-top:20px;
+/* ===== RESET & BASE ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.sidebar h2{
-    color:white;
-    text-align:center;
+body {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  background: linear-gradient(rgba(2, 6, 23, 0.7), rgba(2, 6, 23, 0.8)), var(--bg-image);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--text-main);
+  min-height: 100vh;
+  display: flex;
 }
 
-.sidebar a{
-    display:block;
-    color:white;
-    padding:12px;
-    text-decoration:none;
+/* ===== SIDEBAR (ÍNDICE VERTICAL) ===== */
+.sidebar {
+  width: 280px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: var(--glass-bg);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-right: 1px solid var(--glass-border);
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
 }
 
-.sidebar a:hover{
-    background:#4caf50;
+.sidebar h2 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--primary);
+  margin-bottom: 30px;
+  text-align: center;
 }
 
-.contenido{
-    margin-left:250px;
-    padding:30px;
-    background:rgba(255,255,255,0.9);
+.sidebar a {
+  color: var(--text-muted);
+  text-decoration: none;
+  padding: 14px 20px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  transition: var(--transition);
+  border: 1px solid transparent;
 }
 
-img{
-    width:100%;
-    max-width:500px;
-    border-radius:10px;
+.sidebar a:hover {
+  background: rgba(16, 185, 129, 0.1);
+  color: white;
+  border-color: var(--glass-border);
+  transform: translateX(5px);
 }
 
-table{
-    border-collapse: collapse;
-    width:80%;
-    margin-top:20px;
+/* ===== CONTENIDO PRINCIPAL ===== */
+.contenido {
+  margin-left: 280px; /* Ancho del sidebar */
+  padding: 60px 80px;
+  width: 100%;
+  max-width: 1200px;
 }
 
-th, td{
-    border:1px solid #999;
-    padding:10px;
-    text-align:center;
+h1 {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 800;
+  background: linear-gradient(to right, #fff, var(--primary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 40px;
+  animation: reveal 1s ease-out;
 }
 
-th{
-    background:#4caf50;
-    color:white;
+h2 {
+  color: var(--primary);
+  font-size: 1.5rem;
+  margin-top: 30px;
+  margin-bottom: 15px;
 }
 
+/* ===== TARJETAS Y SECCIONES ===== */
+.contenido > section, 
+.contenido > div:not(.sidebar) {
+  background: var(--glass-bg);
+  padding: 40px;
+  border-radius: 24px;
+  border: 1px solid var(--glass-border);
+  margin-bottom: 30px;
+  transition: var(--transition);
+  animation: slideIn 0.8s ease-out backwards;
+}
+
+.contenido > *:hover {
+  border-color: var(--primary-glow);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* ===== LISTAS & LINKS ===== */
+ul {
+  list-style: none;
+}
+
+ul li {
+  padding: 10px 0;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+}
+
+ul li::before {
+  content: "→";
+  color: var(--primary);
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+a {
+  color: var(--primary);
+  transition: var(--transition);
+}
+
+a:hover {
+  color: white;
+  text-shadow: 0 0 10px var(--primary-glow);
+}
+
+/* ===== ANIMACIONES ===== */
+@keyframes reveal {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(30px); filter: blur(10px); }
+  to { opacity: 1; transform: translateX(0); filter: blur(0); }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .sidebar { width: 80px; padding: 20px 10px; }
+  .sidebar h2 { display: none; }
+  .sidebar a { font-size: 0; text-align: center; }
+  .sidebar a::before { content: "•"; font-size: 2rem; color: var(--primary); }
+  .contenido { margin-left: 80px; padding: 40px 20px; }
+}
 </style>
+
 <body>
 
-<div class="sidebar">
+<nav class="sidebar">
     <h2>ÍNDICE</h2>
     <a href="index.html">Inicio</a>
-    <a href="contaminacion.html">Contaminación ambiental</a>
-    <a href="residuos.html">Residuos informáticos</a>
-    <a href="obsolescencia.html">Obsolescencia programada</a>
-    <a href="informatica-ecologica.html">Informática ecológica</a>
-</div>
+    <a href="contaminacion.html">Contaminación</a>
+    <a href="residuos.html">Residuos IT</a>
+    <a href="obsolescencia.html">Obsolescencia</a>
+    <a href="informatica-ecologica.html">Eco-Informática</a>
+</nav>
 
-<div class="contenido">
+<main class="contenido">
     <h1>🌍 Informática Ambiental</h1>
 
-    <p>Bienvenido a nuestro proyecto sobre <strong>el impacto de la informática en el medio ambiente</strong>. 
-La tecnología forma parte de nuestra vida diaria, pero también puede generar problemas ambientales si no se utiliza de forma responsable.</p>
+    <section>
+        <p>Bienvenido a nuestro proyecto sobre <strong>el impacto de la informática en el medio ambiente</strong>. 
+        La tecnología forma parte de nuestra vida diaria, pero también puede generar problemas ambientales si no se utiliza de forma responsable.</p>
+    </section>
 
-    <h2>🎯 Objetivo del proyecto</h2>
-    <ul>
-        <li>Analizar cómo la tecnología afecta al medio ambiente.</li>
-        <li>Conocer soluciones para reducir el impacto de los dispositivos electrónicos.</li>
-        <li>Promover prácticas de informática ecológica.</li>
-    </ul>
+    <section>
+        <h2>🎯 Objetivo del proyecto</h2>
+        <ul>
+            <li>Analizar cómo la tecnología afecta al medio ambiente.</li>
+            <li>Conocer soluciones para reducir el impacto de los dispositivos electrónicos.</li>
+            <li>Promover prácticas de informática ecológica.</li>
+        </ul>
+    </section>
 
-    <h2>👨‍💻 Autores (Grupo 1)</h2>
-    <ul>
-        <li>Hugo Da Silva Sánchez</li>
-        <li>Sergio Ferrer Merino</li>
-        <li>Mario Infantes Trigo</li>
-    </ul>
+    <section style="animation-delay: 0.2s;">
+        <h2>👨‍💻 Autores (Grupo 1)</h2>
+        <ul>
+            <li>Hugo Da Silva Sánchez</li>
+            <li>Sergio Ferrer Merino</li>
+            <li>Mario Infantes Trigo</li>
+        </ul>
+    </section>
 
-    <h2>📖 Referencias</h2>
-    <ul>
-        <li><a href="https://www.greenpeace.org" target="_blank">Greenpeace</a></li>
-        <li><a href="https://www.unep.org" target="_blank">United Nations Environment Programme</a></li>
-        <li><a href="https://www.ecotic.es" target="_blank">ECOTIC</a></li>
-    </ul>
-</div>
+    <section style="animation-delay: 0.4s;">
+        <h2>📖 Referencias</h2>
+        <ul>
+            <li><a href="https://www.greenpeace.org" target="_blank">Greenpeace</a></li>
+            <li><a href="https://www.unep.org" target="_blank">United Nations Environment Programme</a></li>
+            <li><a href="https://www.ecotic.es" target="_blank">ECOTIC</a></li>
+        </ul>
+    </section>
+</main>
 
 </body>
 </html>
