@@ -95,7 +95,7 @@ h1 {
   background: linear-gradient(to right, #fff, var(--primary), var(--secondary));
   -webkit-background-clip: text;
   background-clip: text;
-  color: transparent;
+  color: white;
   margin-bottom: 10px;
   animation: reveal 1s ease-out;
 }
