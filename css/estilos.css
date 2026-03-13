@@ -1,4 +1,5 @@
 /* ===== VARIABLES ===== */
+
 :root{
 --bg-dark:#020617;
 --text-main:#ffffff;
@@ -8,7 +9,8 @@
 --glass-border:rgba(255,255,255,0.08);
 }
 
-/* RESET */
+/* ===== RESET ===== */
+
 *{
 margin:0;
 padding:0;
@@ -22,10 +24,11 @@ color:var(--text-main);
 min-height:100vh;
 }
 
-/* ===== INDICE ===== */
+/* ===== SIDEBAR ===== */
 
 .sidebar{
 width:280px;
+min-width:280px;
 height:100vh;
 position:fixed;
 left:0;
@@ -127,12 +130,13 @@ th{
 background:rgba(56,189,248,0.1);
 }
 
-/* ===== MOVIL ===== */
+/* ===== RESPONSIVE ===== */
 
 @media (max-width:992px){
 
 .sidebar{
 width:80px;
+min-width:80px;
 }
 
 .sidebar h2{
