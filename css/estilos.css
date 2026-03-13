@@ -5,13 +5,12 @@
   --primary: #38bdf8;
   --secondary: #818cf8;
   --accent: #22c55e;
-  --text-main: #ffffff;
+  --text-main: #ffffff; /* Cambiado a blanco puro */
   --text-muted: #94a3b8;
   --glass: rgba(255, 255, 255, 0.03);
   --glass-border: rgba(255, 255, 255, 0.08);
   --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 /* ===== RESET PROFESIONAL ===== */
 *, *::before, *::after {
   margin: 0;
@@ -33,17 +32,121 @@ body {
   display: flex;
 }
 
-/* ===== SIDEBAR ===== */
+/* ===== SIDEBAR (ÍNDICE VERTICAL) ===== */
 .sidebar {
   width: 280px;
   height: 100vh;
   position: fixed;
   left: 0;
   top: 0;
-  background: rgba(2, 6, 23, 0.8);
+  background: rgba(2, 6, 23, 0.8); /* Ajustado para que se vea */
   backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
   border-right: 1px solid var(--glass-border);
   padding: 40px 20px;
   display: flex;
   flex-direction: column;
+  z-index: 1000;
 }
+
+.sidebar h2 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #ffffff; /* Título del sidebar en blanco */
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.sidebar a {
+  color: var(--text-muted);
+  text-decoration: none;
+  padding: 14px 20px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  transition: var(--transition);
+  border: 1px solid transparent;
+}
+
+.sidebar a:hover {
+  background: rgba(56, 189, 248, 0.1);
+  color: white;
+  border-color: var(--glass-border);
+  transform: translateX(5px);
+}
+
+
+/* ===== CONTENIDO (AGRUPADO) ===== */
+.contenido {
+  margin-left: 280px; /* Espacio para el sidebar */
+  width: 100%;
+  max-width: 900px;
+  padding: 80px 50px;
+  margin-right: auto;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: white;
+  text-align: center;
+  margin-bottom: 50px;
+  animation: reveal 1s ease;
+}
+
+/* ESTA ES LA REGLA QUE JUNTA LOS CONTENIDOS */
+.contenido section {
+  background: var(--glass);
+  padding: 35px;
+  border-radius: 20px;
+  border: 1px solid var(--glass-border);
+  margin-bottom: 25px; /* Espacio entre diferentes temas */
+  backdrop-filter: blur(10px);
+  transition: var(--transition);
+  animation: slideIn 0.8s ease-out backwards;
+}
+
+.contenido section:hover {
+  border-color: rgba(56, 189, 248, 0.3);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+/* Estilos internos de la tarjeta */
+h2 {
+  color: white;
+  margin-top: 0; /* Quita espacio superior para que pegue al borde de la tarjeta */
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+}
+
+p {
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+ul { padding-left: 20px; color: var(--text-muted); }
+ul li { margin-bottom: 8px; }
+
+/* ===== ANIMACIONES ===== */
+@keyframes reveal {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(30px); filter: blur(10px); }
+  to { opacity: 1; transform: translateY(0); filter: blur(0); }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+  .sidebar { width: 80px; }
+  .sidebar h2 { display: none; }
+  .sidebar a { font-size: 0; text-align: center; }
+  .sidebar a::before { content: "•"; font-size: 2rem; color: var(--primary); }
+  .contenido { margin-left: 100px; }
+}
+
