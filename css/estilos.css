@@ -1,15 +1,14 @@
 /* ===== VARIABLES ===== */
 :root{
 --bg-dark:#020617;
---primary:#38bdf8;
 --text-main:#ffffff;
 --text-muted:#94a3b8;
+--primary:#38bdf8;
 --glass:rgba(255,255,255,0.03);
 --glass-border:rgba(255,255,255,0.08);
---transition:all .4s cubic-bezier(.4,0,.2,1);
 }
 
-/* RESET */
+/* ===== RESET ===== */
 *{
 margin:0;
 padding:0;
@@ -23,14 +22,14 @@ color:var(--text-main);
 min-height:100vh;
 }
 
-/* SIDEBAR */
+/* ===== SIDEBAR / INDICE ===== */
 .sidebar{
 width:280px;
 height:100vh;
 position:fixed;
 left:0;
 top:0;
-background:rgba(2,6,23,.85);
+background:rgba(2,6,23,0.9);
 backdrop-filter:blur(15px);
 border-right:1px solid var(--glass-border);
 padding:40px 20px;
@@ -38,70 +37,68 @@ display:flex;
 flex-direction:column;
 }
 
+/* TITULO INDICE */
 .sidebar h2{
-font-size:.8rem;
-letter-spacing:3px;
-margin-bottom:30px;
+font-size:12px;
+letter-spacing:4px;
+color:white;
 text-align:center;
+margin-bottom:40px;
 }
 
+/* LINKS DEL INDICE */
 .sidebar a{
+font-size:15px;
 color:var(--text-muted);
 text-decoration:none;
-padding:14px 20px;
-border-radius:12px;
-margin-bottom:8px;
-transition:var(--transition);
+padding:14px 18px;
+margin-bottom:10px;
+border-radius:10px;
+transition:0.3s;
 }
 
 .sidebar a:hover{
-background:rgba(56,189,248,.1);
+background:rgba(56,189,248,0.1);
 color:white;
 transform:translateX(5px);
 }
 
-/* CONTENIDO */
+/* ===== CONTENIDO ===== */
 .contenido{
 max-width:1000px;
-margin-left:300px;
-padding:100px 24px 80px;
+margin-left:320px;
+padding:100px 40px 80px;
 display:flex;
 flex-direction:column;
-gap:32px;
+gap:35px;
 }
 
-/* TITULOS */
+/* ===== TITULO PRINCIPAL ===== */
 h1{
-font-size:clamp(2.5rem,5vw,4rem);
+font-size:60px;
 font-weight:800;
-text-align:center;
+margin-bottom:20px;
 }
 
+/* ===== SUBTITULOS ===== */
 h2{
-font-size:1.7rem;
+font-size:28px;
 margin-bottom:15px;
 }
 
-/* TARJETAS */
+/* ===== TARJETAS ===== */
 section{
 background:var(--glass);
 padding:40px;
-border-radius:24px;
+border-radius:25px;
 border:1px solid var(--glass-border);
-backdrop-filter:blur(5px);
-transition:var(--transition);
 }
 
-section:hover{
-transform:translateY(-8px);
-border-color:rgba(56,189,248,.3);
-box-shadow:0 20px 40px rgba(0,0,0,.3);
-}
-
-/* TEXTO */
+/* ===== TEXTO ===== */
 p{
 color:var(--text-muted);
 line-height:1.7;
+margin-bottom:15px;
 }
 
 ul{
@@ -113,17 +110,16 @@ ul li{
 margin-bottom:8px;
 }
 
-/* IMAGENES */
+/* ===== IMAGENES ===== */
 img{
 width:100%;
 max-width:650px;
 display:block;
 margin:20px auto;
 border-radius:16px;
-border:1px solid var(--glass-border);
 }
 
-/* TABLA */
+/* ===== TABLAS ===== */
 table{
 width:100%;
 border-collapse:collapse;
@@ -133,14 +129,13 @@ margin-top:20px;
 th,td{
 border:1px solid var(--glass-border);
 padding:12px;
-text-align:left;
 }
 
 th{
-background:rgba(56,189,248,.1);
+background:rgba(56,189,248,0.1);
 }
 
-/* RESPONSIVE */
+/* ===== RESPONSIVE ===== */
 @media (max-width:992px){
 
 .sidebar{
