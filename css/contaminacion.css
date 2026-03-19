@@ -1,3 +1,49 @@
+/* ===== SIDEBAR ===== */
+.sidebar{
+  width:250px;
+  height:100vh;
+  position:fixed;
+  top:0;
+  left:0;
+  background:rgba(2,6,23,0.9);
+  backdrop-filter:blur(15px);
+  border-right:1px solid rgba(255,255,255,0.08);
+  padding:40px 20px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  z-index:100;
+}
+
+.sidebar h2{
+  font-size:14px;
+  letter-spacing:2px;
+  text-align:center;
+  margin-bottom:20px;
+  color:white;
+}
+
+.sidebar a{
+  font-size:14px;
+  color:#94a3b8;
+  text-decoration:none;
+  padding:10px 14px;
+  border-radius:8px;
+  transition:0.3s;
+}
+
+.sidebar a:hover{
+  background:rgba(56,189,248,0.1);
+  color:white;
+  transform:translateX(5px);
+}
+
+/* Ajustar contenido para que no quede detrás del sidebar */
+.contenido{
+  margin-left:300px; /* dejar espacio para sidebar */
+  max-width:1200px;
+  padding:60px 40px;
+}
 :root{
   --bg-dark:#020617;
   --text-main:#ffffff;
