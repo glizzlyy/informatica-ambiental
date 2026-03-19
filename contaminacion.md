@@ -55,15 +55,15 @@ body{
   transform:translateX(5px);
 }
 
-/* ===== CONTENIDO ===== */
+.markdown-body{
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
 .contenido{
-  width: calc(100% - 320px); /* ocupa casi todo el ancho */
-  max-width: none;
-  margin-left:320px;
-  padding:100px 60px 80px;
-  display:flex;
-  flex-direction:column;
-  gap:35px;
+  width: 95vw !important;
+  max-width: 95vw !important;
+  margin-left: 280px;
 }
 
 /* Tarjetas tipo glass */
