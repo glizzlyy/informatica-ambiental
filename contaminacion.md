@@ -1,4 +1,15 @@
-<link rel="stylesheet" href="css/contaminacion.css">
+<!-- Sidebar HTML -->
+<div class="sidebar">
+  <h2>ÍNDICE</h2>
+  <a href="index.md">Inicio</a>
+  <a href="contaminacion.md">Contaminación Ambiental</a>
+  <a href="residuos.md">Residuos Informáticos</a>
+  <a href="obsolescencia.md">Obsolescencia Programada</a>
+  <a href="informatica-ecologica.md">Informática Ecológica</a>
+</div>
+
+<!-- Contenido principal -->
+<div class="contenido">
 
 # 🌍 Contaminación Ambiental
 
@@ -8,13 +19,13 @@ La contaminación ambiental es la introducción de sustancias o energía que pro
 
 Este problema afecta al aire, al agua y al suelo. En gran parte es causado por las actividades humanas como las fábricas, el transporte, el uso de combustibles fósiles y la mala gestión de los residuos.
 
-Existen distintos tipos de contaminación: atmosférica, hídrica, del suelo, lumínica y sonora, cada una con efectos específicos sobre los ecosistemas y la vida cotidiana de las personas.
+Existen distintos tipos de contaminación: atmosférica, hídrica, del suelo, lumínica y sonora.
 
 ---
 
 ## 💻 Impacto de la informática
 
-La producción de dispositivos electrónicos requiere energía y recursos naturales, generando emisiones contaminantes. Además, los centros de datos consumen mucha electricidad para almacenar información y mantener funcionando internet.
+La producción de dispositivos electrónicos requiere energía y recursos naturales, generando emisiones contaminantes. Además, los centros de datos consumen mucha electricidad.
 
 Cuando los dispositivos dejan de usarse y no se reciclan correctamente, se convierten en residuos electrónicos peligrosos.
 
@@ -37,3 +48,5 @@ Para reducir este impacto, es importante reciclar, reparar y reutilizar disposit
 La acumulación de residuos y la contaminación afectan a los ecosistemas y a la salud humana.
 
 Concienciarse y aplicar buenas prácticas es clave para proteger el planeta.
+
+</div>
