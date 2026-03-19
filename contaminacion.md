@@ -57,7 +57,7 @@ body{
 
 /* ===== CONTENIDO ===== */
 .contenido{
-  max-width:900px;
+  max-width:1200px;  /* más ancho que antes */
   margin-left:320px; /* espacio para el sidebar */
   padding:100px 40px 80px;
   display:flex;
@@ -94,7 +94,7 @@ h2{
 
 img{
   width:100%;
-  max-width:650px;
+  max-width:800px;  /* imagen más grande acorde al contenido */
   display:block;
   margin:20px 0;
   border-radius:16px;
