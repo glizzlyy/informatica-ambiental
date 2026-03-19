@@ -57,9 +57,10 @@ body{
 
 /* ===== CONTENIDO ===== */
 .contenido{
-  max-width:1200px;  /* más ancho que antes */
-  margin-left:320px; /* espacio para el sidebar */
-  padding:100px 40px 80px;
+  width: calc(100% - 320px); /* ocupa casi todo el ancho */
+  max-width: none;
+  margin-left:320px;
+  padding:100px 60px 80px;
   display:flex;
   flex-direction:column;
   gap:35px;
@@ -71,9 +72,11 @@ section{
   padding:40px;
   border-radius:25px;
   border:1px solid var(--glass-border);
+  max-width:1100px;
+  margin:0 auto;
 }
 
-/* Texto alineado a la izquierda */
+/* Texto */
 section p, section ul{
   color:var(--text-muted);
   line-height:1.7;
@@ -94,9 +97,9 @@ h2{
 
 img{
   width:100%;
-  max-width:800px;  /* imagen más grande acorde al contenido */
+  max-width:900px;
   display:block;
-  margin:20px 0;
+  margin:20px auto;
   border-radius:16px;
 }
 
