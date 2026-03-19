@@ -8,12 +8,6 @@
   --glass-border:rgba(255,255,255,0.08);
 }
 
-/* Evita límite de Markdown */
-.markdown-body{
-  max-width:100% !important;
-  width:100% !important;
-}
-
 /* ===== BODY ===== */
 body{
   font-family:'Inter',sans-serif;
@@ -61,18 +55,18 @@ body{
   transform:translateX(5px);
 }
 
-/* ===== CONTENIDO CENTRADO ===== */
+/* ===== CONTENIDO ===== */
 .contenido{
   max-width:1100px;
   margin-left:320px;  /* espacio del sidebar */
-  margin-right:40px;  /* margen derecho equilibrado */
+  margin-right:40px;
   padding:100px 40px 80px;
   display:flex;
   flex-direction:column;
   gap:35px;
 }
 
-/* Tarjetas centradas */
+/* Tarjetas tipo glass */
 section{
   background:var(--glass);
   padding:40px;
@@ -82,13 +76,11 @@ section{
   margin:0 auto;
 }
 
-/* Texto */
 section p, section ul{
   color:var(--text-muted);
   line-height:1.7;
 }
 
-/* Títulos */
 h1{
   font-size:60px;
   font-weight:800;
@@ -100,7 +92,6 @@ h2{
   margin-bottom:15px;
 }
 
-/* Imagen */
 img{
   width:100%;
   max-width:800px;
@@ -129,54 +120,63 @@ ul li{
 
 <main class="contenido">
 
-<h1>♻️ Residuos Informáticos</h1>
+<h1>🌍 Contaminación Ambiental</h1>
 
 <section>
-<img src="img/residuos.jpg" alt="Residuos Informáticos">
+<img src="img/contaminacion.jpg" alt="Contaminación Ambiental">
 
 <p>
-Los <strong>residuos informáticos</strong> son todos los dispositivos electrónicos como ordenadores, móviles, tablets o impresoras que han dejado de usarse y que necesitan ser reciclados correctamente. Su manejo adecuado es crucial para proteger el medio ambiente y la salud humana.
+La contaminación ambiental es la introducción de sustancias o energía que provocan efectos negativos en el medio ambiente y la salud de los seres humanos.
+</p>
+
+<p>
+Este problema afecta al aire, al agua y al suelo. En gran parte es causado por las actividades humanas como las fábricas, el transporte, el uso de combustibles fósiles y la mala gestión de los residuos.
+</p>
+
+<p>
+Existen distintos tipos de contaminación: atmosférica, hídrica, del suelo, lumínica y sonora, cada una con efectos específicos sobre los ecosistemas y la vida cotidiana de las personas.
 </p>
 </section>
 
 <section>
-<h2>Problema ambiental</h2>
+<h2>Impacto de la informática</h2>
 
 <p>
-Muchos dispositivos contienen materiales peligrosos como plomo, mercurio, cadmio, arsénico y retardantes de llama que pueden filtrarse al suelo y al agua si se desechan incorrectamente. Además, los plásticos y microcomponentes tardan siglos en degradarse.
+La producción de dispositivos electrónicos requiere energía y recursos naturales, generando emisiones contaminantes. Además, los centros de datos consumen mucha electricidad para almacenar información y mantener funcionando internet.
+</p>
+
+<p>
+Cuando los ordenadores, móviles o tablets dejan de usarse y no se reciclan correctamente, se convierten en residuos electrónicos que pueden contaminar el medio ambiente debido a los materiales tóxicos que contienen.
 </p>
 
 <ul>
-<li><strong>Contaminación por metales pesados:</strong> Plomo, mercurio y cadmio presentes en componentes electrónicos contaminan el suelo y agua.</li>
-<li><strong>Plásticos y retardantes de llama:</strong> Difíciles de degradar, afectan a la fauna y flora.</li>
-<li><strong>Impacto energético:</strong> La producción de nuevos dispositivos requiere gran cantidad de recursos y electricidad.</li>
+<li><strong>Contaminación por metales pesados:</strong> Plomo, mercurio y cadmio presentes en componentes electrónicos pueden filtrarse al suelo y agua.</li>
+<li><strong>Contaminación energética:</strong> Los centros de datos consumen gran cantidad de electricidad, muchas veces generada por combustibles fósiles.</li>
+<li><strong>Plásticos y químicos difíciles de degradar:</strong> Retardantes de llama y microplásticos afectan a la fauna y flora cuando no se gestionan correctamente.</li>
 </ul>
-</section>
-
-<section>
-<h2>Soluciones</h2>
 
 <p>
-Para reducir el impacto de los residuos electrónicos es fundamental:
+Para reducir este impacto, es importante reciclar los dispositivos, prolongar su vida útil mediante reparaciones o actualizaciones, y optar por productos electrónicos certificados como ecológicos o de bajo consumo.
 </p>
-
-<ul>
-<li>Reciclar dispositivos correctamente en puntos autorizados.</li>
-<li>Prolongar la vida útil mediante reparaciones o actualizaciones.</li>
-<li>Optar por productos certificados como ecológicos o de bajo consumo.</li>
-<li>Evitar la compra innecesaria de equipos electrónicos y fomentar la reutilización.</li>
-</ul>
 </section>
 
 <section>
 <h2>Consecuencias</h2>
 
+<ul>
+<li>Contaminación del aire</li>
+<li>Contaminación del suelo</li>
+<li>Daños en los ecosistemas</li>
+<li>Impacto en la salud humana</li>
+<li>Pérdida de biodiversidad</li>
+</ul>
+
 <p>
-El manejo inadecuado de los residuos informáticos provoca contaminación del aire, suelo y agua, afectando la salud de los seres humanos y la biodiversidad. La exposición prolongada a metales pesados puede causar problemas respiratorios, neurológicos y daños a órganos vitales.
+La acumulación de residuos y la contaminación afectan a los ecosistemas naturales, provocando la desaparición de especies y problemas de salud en las personas. La exposición prolongada a metales pesados y químicos presentes en la electrónica puede causar enfermedades respiratorias, problemas neurológicos y daños a órganos vitales.
 </p>
 
 <p>
-Concienciarse sobre el reciclaje y la eficiencia energética es clave para proteger nuestro planeta y garantizar un futuro sostenible.
+Concienciarse sobre estos problemas y aplicar buenas prácticas de reciclaje y eficiencia energética es clave para proteger nuestro planeta y la salud de las generaciones futuras.
 </p>
 </section>
 
