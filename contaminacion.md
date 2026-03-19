@@ -1,124 +1,37 @@
 <style>
-:root{
-  --bg-dark:#020617;
-  --text-main:#ffffff;
-  --text-muted:#94a3b8;
-  --primary:#38bdf8;
-  --glass:rgba(255,255,255,0.03);
-  --glass-border:rgba(255,255,255,0.08);
+/* Ocultar título automático */
+.markdown-section h1:first-child{
+  display:none;
 }
 
-body{
-  font-family:'Inter',sans-serif;
-  background: radial-gradient(circle at top left,#1e293b,#020617 50%);
-  color:var(--text-main);
-  margin:0;
-}
-
-.sidebar{
-  width:280px;
-  height:100vh;
-  position:fixed;
-  top:0;
-  left:0;
-  background:rgba(2,6,23,0.9);
-  backdrop-filter:blur(15px);
-  border-right:1px solid var(--glass-border);
-  padding:40px 20px;
-  display:flex;
-  flex-direction:column;
-}
-
-.sidebar h2{
-  font-size:12px;
-  letter-spacing:3px;
-  text-align:center;
-  margin-bottom:30px;
-  color:white;
-}
-
-.sidebar a{
-  font-size:14px;
-  color:var(--text-muted);
-  text-decoration:none;
-  padding:12px 16px;
-  margin-bottom:6px;
-  border-radius:10px;
-  transition:0.3s;
-}
-
-.sidebar a:hover{
-  background:rgba(56,189,248,0.1);
-  color:white;
-  transform:translateX(5px);
-}
-
+/* Hacer contenido más ancho */
 .contenido{
-  max-width:1400px;
-  margin-left:320px;
-  margin-right:40px;
-  padding:100px 40px 80px;
-  display:flex;
-  flex-direction:column;
-  gap:35px;
+  max-width:1500px;
 }
 
+/* Hacer tarjetas más anchas */
 section{
-  background:var(--glass);
-  padding:40px;
-  border-radius:25px;
-  border:1px solid var(--glass-border);
-  max-width:1100px; /* MÁS ANCHO */
-  margin:0 auto;
+  max-width:1200px;
 }
 
-section p, section ul{
-  color:var(--text-muted);
-  line-height:1.7;
-}
-
-h1{
-  font-size:60px;
-  font-weight:800;
-  margin-left:10px;
-}
-
-h2{
-  font-size:28px;
-  margin-bottom:15px;
-}
-
+/* Imagen más grande */
 img{
-  width:100%;
-  max-width:900px;
-  display:block;
-  margin:20px auto;
-  border-radius:16px;
-}
-
-ul{
-  padding-left:20px;
-}
-
-ul li{
-  margin-bottom:8px;
+  max-width:1000px;
 }
 </style>
 
 <nav class="sidebar">
 <h2>ÍNDICE</h2>
-
-- [Inicio](index.md)
-- [Contaminación ambiental](contaminacion.md)
-- [Residuos informáticos](residuos.md)
-- [Obsolescencia programada](obsolescencia.md)
-- [Informática ecológica](informatica-ecologica.md)
-
+<a href="index.md">Inicio</a>
+<a href="contaminacion.md">Contaminación ambiental</a>
+<a href="residuos.md">Residuos informáticos</a>
+<a href="obsolescencia.md">Obsolescencia programada</a>
+<a href="informatica-ecologica.md">Informática ecológica</a>
 </nav>
 
 <main class="contenido">
 
-# 🌍 Contaminación Ambiental
+<h1>🌍 Contaminación Ambiental</h1>
 
 <section>
 
@@ -140,11 +53,11 @@ La producción de dispositivos electrónicos requiere energía y recursos natura
 
 Cuando los ordenadores, móviles o tablets dejan de usarse y no se reciclan correctamente, se convierten en residuos electrónicos que pueden contaminar el medio ambiente debido a los materiales tóxicos que contienen.
 
-- **Contaminación por metales pesados:** Plomo, mercurio y cadmio pueden filtrarse al suelo y agua.  
-- **Contaminación energética:** Alto consumo eléctrico de centros de datos.  
-- **Plásticos y químicos:** Difíciles de degradar y dañinos para ecosistemas.
+- **Contaminación por metales pesados:** Plomo, mercurio y cadmio presentes en componentes electrónicos pueden filtrarse al suelo y agua.  
+- **Contaminación energética:** Los centros de datos consumen gran cantidad de electricidad.  
+- **Plásticos y químicos:** Difíciles de degradar y dañinos para ecosistemas.  
 
-Para reducir este impacto, es importante reciclar los dispositivos, prolongar su vida útil y elegir productos ecológicos.
+Para reducir este impacto, es importante reciclar los dispositivos, prolongar su vida útil y optar por productos ecológicos.
 
 </section>
 
@@ -159,6 +72,8 @@ Para reducir este impacto, es importante reciclar los dispositivos, prolongar su
 - Pérdida de biodiversidad  
 
 La acumulación de residuos y la contaminación afectan a los ecosistemas naturales, provocando la desaparición de especies y problemas de salud en las personas.
+
+La exposición prolongada a metales pesados y químicos puede causar enfermedades respiratorias, problemas neurológicos y daños a órganos vitales.
 
 Concienciarse y aplicar buenas prácticas es clave para proteger el planeta.
 
