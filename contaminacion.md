@@ -15,16 +15,16 @@ color:var(--text-main);
 margin:0;
 }
 
-/* SIDEBAR DERECHA */
+/* SIDEBAR IZQUIERDA */
 .sidebar{
 width:260px;
 height:100vh;
 position:fixed;
 top:0;
-right:0;
+left:0;
 background:rgba(2,6,23,0.9);
 backdrop-filter:blur(15px);
-border-left:1px solid var(--glass-border);
+border-right:1px solid var(--glass-border);
 padding:40px 20px;
 }
 
@@ -47,12 +47,13 @@ margin-bottom:8px;
 .sidebar a:hover{
 background:rgba(56,189,248,0.1);
 color:white;
+transform:translateX(5px);
 }
 
 /* CONTENIDO */
 .contenido{
 max-width:900px;
-margin-right:300px;
+margin-left:300px;
 padding:80px 40px;
 }
 
@@ -64,6 +65,14 @@ border:1px solid var(--glass-border);
 margin-bottom:30px;
 }
 
+img{
+width:100%;
+max-width:600px;
+display:block;
+margin:20px auto;
+border-radius:15px;
+}
+
 h1{
 font-size:50px;
 }
@@ -71,21 +80,13 @@ font-size:50px;
 h2{
 margin-bottom:10px;
 }
-
-img{
-width:100%;
-max-width:600px;
-display:block;
-margin:20px auto;
-border-radius:12px;
-}
 </style>
 
 <div class="sidebar">
 
 ### ÍNDICE
 
-<a href="#inicio">Contaminación</a>
+<a href="#inicio">Inicio</a>
 <a href="#impacto">Impacto informática</a>
 <a href="#consecuencias">Consecuencias</a>
 
@@ -101,9 +102,9 @@ border-radius:12px;
 
 La contaminación ambiental es la introducción de sustancias o energía que provocan efectos negativos en el medio ambiente y la salud de los seres humanos.
 
-Este problema afecta al aire, al agua y al suelo. En gran parte es causado por las actividades humanas como las fábricas, el transporte, el uso de combustibles fósiles y la mala gestión de los residuos.
+Este problema afecta al aire, al agua y al suelo. En gran parte es causado por actividades humanas como fábricas, transporte y uso de combustibles fósiles.
 
-Existen distintos tipos de contaminación: atmosférica, hídrica, del suelo, lumínica y sonora, cada una con efectos específicos sobre los ecosistemas y la vida cotidiana de las personas.
+Existen distintos tipos de contaminación: atmosférica, hídrica, del suelo, lumínica y sonora.
 
 </div>
 
@@ -113,24 +114,18 @@ Existen distintos tipos de contaminación: atmosférica, hídrica, del suelo, lu
 
 La producción de dispositivos electrónicos requiere energía y recursos naturales, generando emisiones contaminantes.
 
-Además, los centros de datos consumen mucha electricidad para mantener funcionando internet.
+Cuando los dispositivos no se reciclan correctamente, se convierten en residuos electrónicos peligrosos.
 
-### ⚠️ Principales impactos
+### Problemas principales:
 
-- **Contaminación por metales pesados**  
-  Plomo, mercurio y cadmio pueden filtrarse al suelo y agua.
+- **Metales pesados** (plomo, mercurio, cadmio)  
+- **Alto consumo energético**  
+- **Plásticos y químicos contaminantes**
 
-- **Contaminación energética**  
-  Alto consumo eléctrico (muchas veces de combustibles fósiles).
-
-- **Plásticos y químicos**  
-  Difíciles de degradar y dañinos para la fauna y flora.
-
-Para reducir este impacto:
-
-- ♻️ Reciclar dispositivos  
-- 🔧 Reparar en lugar de reemplazar  
-- 🌱 Comprar tecnología eficiente  
+Para reducir el impacto:
+- Reciclar dispositivos  
+- Reparar en lugar de reemplazar  
+- Usar tecnología eficiente  
 
 </div>
 
@@ -138,21 +133,13 @@ Para reducir este impacto:
 
 ## 🚨 Consecuencias <a id="consecuencias"></a>
 
-- 🌫️ Contaminación del aire  
-- 🌱 Contaminación del suelo  
-- 🐾 Daños en los ecosistemas  
-- 🧍 Impacto en la salud humana  
-- 🐢 Pérdida de biodiversidad  
+- Contaminación del aire  
+- Contaminación del suelo  
+- Daños en ecosistemas  
+- Problemas de salud  
+- Pérdida de biodiversidad  
 
-La acumulación de residuos provoca la desaparición de especies y problemas de salud.
-
-La exposición a metales pesados puede causar:
-
-- Enfermedades respiratorias  
-- Problemas neurológicos  
-- Daños en órganos vitales  
-
-> 🌱 Es fundamental concienciarse y aplicar buenas prácticas para proteger el planeta.
+La exposición a contaminantes puede causar enfermedades respiratorias, problemas neurológicos y daños en órganos vitales.
 
 </div>
 
