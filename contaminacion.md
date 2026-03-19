@@ -8,12 +8,18 @@
   --glass-border:rgba(255,255,255,0.08);
 }
 
+/* Evita que Markdown limite el ancho */
+.markdown-body{
+  max-width:100% !important;
+  width:100% !important;
+}
+
+/* ===== BODY ===== */
 body{
   font-family:'Inter',sans-serif;
   background: radial-gradient(circle at top left,#1e293b,#020617 50%);
   color:var(--text-main);
   margin:0;
-  min-height:100vh;
 }
 
 /* ===== SIDEBAR ===== */
@@ -55,18 +61,18 @@ body{
   transform:translateX(5px);
 }
 
-.markdown-body{
-  max-width: 100% !important;
-  width: 100% !important;
-}
-
+/* ===== CONTENIDO ===== */
 .contenido{
-  width: 95vw !important;
-  max-width: 95vw !important;
-  margin-left: 280px;
+  width:95vw !important;
+  max-width:95vw !important;
+  margin-left:340px; /* SOLUCIÓN al corte del título */
+  padding:100px 60px 80px;
+  display:flex;
+  flex-direction:column;
+  gap:35px;
 }
 
-/* Tarjetas tipo glass */
+/* Tarjetas */
 section{
   background:var(--glass);
   padding:40px;
@@ -80,21 +86,21 @@ section{
 section p, section ul{
   color:var(--text-muted);
   line-height:1.7;
-  text-align:left;
 }
 
+/* Títulos */
 h1{
   font-size:60px;
   font-weight:800;
-  text-align:left;
+  margin-left:20px; /* evita que se corte */
 }
 
 h2{
   font-size:28px;
   margin-bottom:15px;
-  text-align:left;
 }
 
+/* Imagen */
 img{
   width:100%;
   max-width:900px;
