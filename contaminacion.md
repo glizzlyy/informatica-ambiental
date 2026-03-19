@@ -1,4 +1,5 @@
-<!-- Sidebar HTML -->
+<link rel="stylesheet" href="css/contaminacion.css">
+
 <div class="sidebar">
   <h2>ÍNDICE</h2>
   <a href="index.md">Inicio</a>
@@ -8,7 +9,6 @@
   <a href="informatica-ecologica.md">Informática Ecológica</a>
 </div>
 
-<!-- Contenido principal -->
 <div class="contenido">
 
 # 🌍 Contaminación Ambiental
