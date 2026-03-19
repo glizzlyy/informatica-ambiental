@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="css/contaminacion.css">
+
 # 🌍 Contaminación Ambiental
 
 ![Contaminación Ambiental](img/contaminacion.jpg)
