@@ -1,6 +1,6 @@
 ---
 layout: estilos
-title: Contaminación ambiental
+title: Contaminación Ambiental
 ---
 
 # 🌍 Contaminación Ambiental
@@ -9,7 +9,7 @@ title: Contaminación ambiental
 
 La contaminación ambiental es la introducción de sustancias o energía que provocan efectos negativos en el medio ambiente y la salud de los seres humanos.
 
-Este problema afecta al aire, al agua y al suelo. En gran parte es causado por actividades humanas como fábricas, transporte, combustibles fósiles y mala gestión de residuos.
+Afecta al aire, al agua y al suelo, y es causada por actividades humanas como fábricas, transporte, combustibles fósiles y mala gestión de residuos.
 
 Existen distintos tipos de contaminación: atmosférica, hídrica, del suelo, lumínica y sonora.
 
@@ -24,8 +24,6 @@ Cuando los dispositivos dejan de usarse y no se reciclan correctamente, se convi
 - **Metales pesados:** Plomo, mercurio y cadmio  
 - **Consumo energético elevado**  
 - **Plásticos difíciles de degradar**  
-
-Para reducir este impacto, es importante reciclar, reparar y reutilizar dispositivos.
 
 ---
 
