@@ -78,39 +78,33 @@ body{
   padding:100px 40px 80px;
   display:flex;
   flex-direction:column;
-  min-height:100vh;
-}
-
-/* 👇 CONTENEDOR QUE CONVIERTE TODO EN "SECTIONS" */
-.sections{
-  display:flex;
-  flex-direction:column;
   gap:35px;
-}
-
-/* 👇 ESTILO TIPO TARJETA (como tu imagen) */
-.sections > *{
-  background:var(--glass);
-  padding:40px;
-  border-radius:25px;
-  border:1px solid var(--glass-border);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  min-height:100vh;
 }
 
 /* TITULOS */
 h1{
   font-size:60px;
   font-weight:800;
+  margin-bottom:20px;
 }
 
-.sections h2{
-  font-size:24px;
-  margin-bottom:10px;
+h2{
+  font-size:28px;
+  margin-bottom:15px;
+}
+
+/* ===== SECTIONS (CLAVE) ===== */
+section{
+  background:var(--glass);
+  padding:40px;
+  border-radius:25px;
+  border:1px solid var(--glass-border);
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
 /* TEXTO */
-.sections p,
-.sections ul{
+p{
   color:var(--text-muted);
   line-height:1.7;
 }
@@ -118,6 +112,7 @@ h1{
 /* LISTAS */
 ul{
   padding-left:20px;
+  color:var(--text-muted);
 }
 
 ul li{
@@ -125,7 +120,7 @@ ul li{
 }
 
 /* IMAGEN */
-.sections img{
+section img{
   width:100%;
   max-width:700px;
   display:block;
@@ -133,7 +128,7 @@ ul li{
   border-radius:16px;
 }
 
-/* TABLA */
+/* TABLAS */
 table{
   width:100%;
   border-collapse:collapse;
@@ -190,9 +185,7 @@ th{
 </nav>
 
 <main class="contenido">
-  <div class="sections">
-    {{ content }}
-  </div>
+  {{ content }}
 </main>
 
 </body>
