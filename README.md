@@ -13,7 +13,7 @@ Este trabajo analiza cómo la tecnología afecta al medio ambiente y qué soluci
 
 ## 📚 Contenidos
 
-- [¿Qué es la contaminación ambiental?](contaminacion.md)
+- [Contaminación ambiental](contaminacion.md)
 - [Residuos informáticos](residuos.md)
 - [Obsolescencia programada](obsolescencia.md)
 - [Informática ecológica](informatica-ecologica.md)
