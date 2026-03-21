@@ -1,6 +1,6 @@
+# _config.yml
 title: Informática Ambiental
-description: Hacia una tecnología sostenible y responsable.
-show_downloads: true
+description: "Hacia una tecnología sostenible y responsable."
 kramdown:
   input: GFM
   hard_wrap: false
