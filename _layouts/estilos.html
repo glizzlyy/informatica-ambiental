@@ -69,61 +69,29 @@ body{
 }
 h1{font-size:60px;font-weight:800;}
 h2{font-size:28px;margin-bottom:15px;}
-  
 section{
-background:var(--glass);
-padding:40px;
-border-radius:25px;
-border:1px solid var(--glass-border);
-}
+  background:var(--glass);
+  padding:40px;
+  border-radius:25px;
+  border:1px solid var(--glass-border);
+  margin-bottom:20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para el efecto */
 }
 section h2{
   font-size:24px;
   margin-bottom:10px;
   color:var(--text-main);
 }
-section p, section ul, section table{
+section p, section ul{
   color:var(--text-muted);
   line-height:1.7;
 }
-
-ul {
-  padding-left: 20px;
-  list-style-type: disc; /* Estilo de lista con viñetas */
-  margin-bottom: 20px;
+ul{
+  padding-left:20px;
 }
-
-ul li {
-  margin-bottom: 8px;
+ul li{
+  margin-bottom:8px;
 }
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-th, td {
-  border: 1px solid var(--glass-border);
-  padding: 12px;
-  text-align: left;
-}
-
-th {
-  background: rgba(56, 189, 248, 0.1);
-}
-
-table th, table td {
-  word-wrap: break-word; /* Asegura que el texto largo se ajuste */
-}
-
-table caption {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
 img{
   width:100%;
   max-width:650px;
@@ -131,13 +99,11 @@ img{
   margin:20px auto;
   border-radius:16px;
 }
-
-table {
+table{
   width:100%;
   border-collapse:collapse;
   margin-top:20px;
 }
-
 th,td{
   border:1px solid var(--glass-border);
   padding:12px;
@@ -185,3 +151,4 @@ th{
 
 </body>
 </html>
+
