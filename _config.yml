@@ -1,1 +1,6 @@
-
+title: Informática Ambiental
+description: Hacia una tecnología sostenible y responsable.
+show_downloads: true
+kramdown:
+  input: GFM
+  hard_wrap: false
