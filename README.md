@@ -38,4 +38,4 @@ El objetivo de este proyecto es estudiar el impacto de la tecnología en el medi
 
 - [Greenpeace](https://www.greenpeace.org)  
 - [United Nations Environment Programme](https://www.unep.org)  
-- [ECOTIC](https://www.ecotic.es)  
+- [ECOTIC](https://www.ecotic.es)
