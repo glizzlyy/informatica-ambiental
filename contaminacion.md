@@ -1,17 +1,9 @@
-<link rel="stylesheet" href="css/contaminacion.css">
+---
+layout: estilos
+title: 🌫️ Contaminación Ambiental
+---
 
-<div class="sidebar">
-  <h2>ÍNDICE</h2>
-  <a href="index.md">Inicio</a>
-  <a href="contaminacion.md">Contaminación Ambiental</a>
-  <a href="residuos.md">Residuos Informáticos</a>
-  <a href="obsolescencia.md">Obsolescencia Programada</a>
-  <a href="informatica-ecologica.md">Informática Ecológica</a>
-</div>
-
-<div class="contenido">
-
-# 🌍 Contaminación Ambiental
+# 🌫️ Contaminación Ambiental
 
 ![Contaminación Ambiental](img/contaminacion.jpg)
 
@@ -33,7 +25,7 @@ Cuando los dispositivos dejan de usarse y no se reciclan correctamente, se convi
 - **Consumo energético elevado**  
 - **Plásticos difíciles de degradar**  
 
-Para reducir este impacto, es importante reciclar, reparar y reutilizar dispositivos.
+Para reducir este impacto, es importante **reciclar, reparar y reutilizar dispositivos**.
 
 ---
 
@@ -49,4 +41,11 @@ La acumulación de residuos y la contaminación afectan a los ecosistemas y a la
 
 Concienciarse y aplicar buenas prácticas es clave para proteger el planeta.
 
-</div>
+---
+
+## 📚 Contenidos relacionados
+
+- [🏠 Inicio](README.md)  
+- [💻 Residuos Informáticos](residuos.md)  
+- [⏳ Obsolescencia Programada](obsolescencia.md)  
+- [🌱 Informática Ecológica](informatica-ecologica.md)  
