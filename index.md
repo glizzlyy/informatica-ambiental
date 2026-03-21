@@ -1,49 +1,34 @@
 ---
 layout: estilos
-title: 🌍 Informática Ambiental
----
-# 🌍 Informática Ambiental
-
-Bienvenido a nuestro proyecto sobre **el impacto de la informática en el medio ambiente**.  
-La tecnología forma parte de nuestra vida diaria, pero también puede generar problemas ambientales si no se utiliza de forma responsable.
-
+title: Informática Ecológica
 ---
 
-## 🎯 Objetivo del proyecto
+# 🌱 Informática Ecológica
 
 <section>
-- Analizar cómo la tecnología afecta al medio ambiente.
-- Conocer soluciones para reducir el impacto de los dispositivos electrónicos.
-- Promover prácticas de informática ecológica.
+La informática ecológica implica el uso de tecnologías sostenibles y la minimización de los impactos ambientales derivados de la fabricación y el uso de dispositivos electrónicos.
+</section>
+
+<section>
+Entre las prácticas más comunes de la informática ecológica se incluyen el reciclaje de equipos, el uso eficiente de la energía y la prolongación de la vida útil de los dispositivos.
 </section>
 
 ---
 
-## 📚 Contenidos
+## Beneficios de la informática ecológica
 
 <section>
-- [Contaminación ambiental](contaminacion.md)
-- [Residuos informáticos](residuos.md)
-- [Obsolescencia programada](obsolescencia.md)
-- [Informática ecológica](informatica-ecologica.md)
+- Reducción del consumo de energía.
+- Minimización de residuos electrónicos.
+- Menor extracción de recursos naturales.
 </section>
 
 ---
 
-## 👨‍💻 Autores (Grupo 1)
+## Soluciones para promover la informática ecológica
 
 <section>
-- Hugo Da Silva Sánchez  
-- Sergio Ferrer Merino  
-- Mario Infantes Trigo  
-</section>
-
----
-
-## 📖 Referencias
-
-<section>
-- [Greenpeace](https://www.greenpeace.org)  
-- [United Nations Environment Programme](https://www.unep.org)  
-- [ECOTIC](https://www.ecotic.es)
+- Uso de componentes reciclables en los dispositivos.
+- Implementación de políticas de reciclaje y reutilización en empresas.
+- Uso de fuentes de energía renovable para alimentar los centros de datos y oficinas.
 </section>
