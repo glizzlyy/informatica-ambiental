@@ -5,6 +5,8 @@ title: 🌫️ Contaminación Ambiental
 
 # 🌫️ Contaminación Ambiental
 
+![Contaminación Ambiental](img/contaminacion.jpg)
+
 La contaminación ambiental es la introducción de sustancias o energía que provocan efectos negativos en el medio ambiente y la salud de los seres humanos.  
 Este problema afecta al aire, al agua y al suelo. En gran parte es causado por las actividades humanas como las fábricas, el transporte, el uso de combustibles fósiles y la mala gestión de los residuos.  
 Existen distintos tipos de contaminación: atmosférica, hídrica, del suelo, lumínica y sonora.
