@@ -7,9 +7,9 @@ title: Informática Ecológica
 
 <section>
 La informática ecológica implica el uso de tecnologías sostenibles y la minimización de los impactos ambientales derivados de la fabricación y el uso de dispositivos electrónicos.
-</section>
 
-<section>
+
+
 Entre las prácticas más comunes de la informática ecológica se incluyen el reciclaje de equipos, el uso eficiente de la energía y la prolongación de la vida útil de los dispositivos.
 </section>
 
