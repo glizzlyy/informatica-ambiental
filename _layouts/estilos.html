@@ -1,1 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Fuente -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      display: flex;
+      background: linear-gradient(135deg, #0a0f1f, #050816);
+      color: #e5e7eb;
+    }
+
+    /* SIDEBAR */
+    .sidebar {
+      width: 250px;
+      height: 100vh;
+      background: #020617;
+      padding: 30px 20px;
+      position: fixed;
+      left: 0;
+      top: 0;
+      border-right: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .sidebar h2 {
+      font-size: 14px;
+      letter-spacing: 2px;
+      margin-bottom: 30px;
+      color: #94a3b8;
+    }
+
+    .sidebar a {
+      display: block;
+      color: #cbd5f5;
+      text-decoration: none;
+      margin: 12px 0;
+      font-size: 14px;
+      transition: 0.2s;
+    }
+
+    .sidebar a:hover {
+      color: #38bdf8;
+      transform: translateX(5px);
+    }
+
+    /* CONTENIDO */
+    .contenido {
+      margin-left: 250px;
+      padding: 60px;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 30px;
+      font-weight: 800;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      line-height: 1.6;
+      color: #cbd5f5;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin: 8px 0;
+    }
+
+    /* TARJETAS */
+    section {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.05);
+      padding: 25px;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      backdrop-filter: blur(10px);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+      }
+
+      .contenido {
+        margin-left: 0;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- SIDEBAR -->
+  <nav class="sidebar">
+    <h2>ÍNDICE</h2>
+
+    <a href="/">Inicio</a>
+    <a href="/contaminacion">Contaminación ambiental</a>
+    <a href="/residuos">Residuos informáticos</a>
+    <a href="/obsolescencia">Obsolescencia programada</a>
+    <a href="/informatica-ecologica">Informática ecológica</a>
+  </nav>
+
+  <!-- CONTENIDO DINÁMICO -->
+  <main class="contenido">
+    {{ content }}
+  </main>
+
+</body>
+</html>
