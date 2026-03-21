@@ -3,10 +3,10 @@ layout: estilos
 title: 🌍 Informática Ambiental
 ---
 # 🌍 Informática Ambiental
-
+<section>
 Bienvenido a nuestro proyecto sobre **el impacto de la informática en el medio ambiente**.  
 La tecnología forma parte de nuestra vida diaria, pero también puede generar problemas ambientales si no se utiliza de forma responsable.
-
+</section>
 ---
 
 ## 🎯 Objetivo del proyecto
