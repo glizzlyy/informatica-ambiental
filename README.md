@@ -26,7 +26,7 @@ El objetivo de este proyecto es estudiar el impacto de la tecnología en el medi
 
 ---
 
-## 👨‍💻 Autores (Grupo 1)
+## 👨‍💻 Autores
 
 - Hugo Da Silva Sánchez  
 - Sergio Ferrer Merino  
