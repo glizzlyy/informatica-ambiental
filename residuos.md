@@ -5,6 +5,8 @@ title: ♻️ Residuos Informáticos
 
 # ♻️ Residuos Informáticos
 
+![Residuos electrónicos](img/residuos.jpg)
+
 Los **residuos informáticos** son todos los dispositivos electrónicos como ordenadores, móviles, tablets o impresoras que han dejado de usarse y que necesitan ser reciclados correctamente. Su manejo adecuado es crucial para proteger el medio ambiente y la salud humana.
 
 ---
