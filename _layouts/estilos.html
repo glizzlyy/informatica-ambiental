@@ -5,6 +5,7 @@
 <title>{{ page.title }}</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
 <style>
 :root{
   --bg-dark:#020617;
@@ -14,7 +15,13 @@
   --glass:rgba(255,255,255,0.03);
   --glass-border:rgba(255,255,255,0.08);
 }
-*{margin:0;padding:0;box-sizing:border-box;}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
 body{
   font-family:'Inter',sans-serif;
   background: radial-gradient(circle at top left,#1e293b,#020617 50%);
@@ -22,6 +29,8 @@ body{
   min-height:100vh;
   display:flex;
 }
+
+/* ===== SIDEBAR ===== */
 .sidebar{
   width:280px;
   min-width:280px;
@@ -37,6 +46,7 @@ body{
   flex-direction:column;
   overflow:hidden;
 }
+
 .sidebar h2{
   font-size:12px;
   letter-spacing:3px;
@@ -44,6 +54,7 @@ body{
   text-align:center;
   margin-bottom:30px;
 }
+
 .sidebar a{
   font-size:14px;
   color:var(--text-muted);
@@ -53,87 +64,120 @@ body{
   border-radius:10px;
   transition:0.3s;
 }
+
 .sidebar a:hover{
   background:rgba(56,189,248,0.1);
   color:white;
   transform:translateX(5px);
 }
+
+/* ===== CONTENIDO ===== */
 .contenido{
   max-width:1000px;
   margin-left:320px;
   padding:100px 40px 80px;
   display:flex;
   flex-direction:column;
-  gap:35px;
   min-height:100vh;
 }
-h1{font-size:60px;font-weight:800;}
-h2{font-size:28px;margin-bottom:15px;}
-section{
+
+/* 👇 CONTENEDOR QUE CONVIERTE TODO EN "SECTIONS" */
+.sections{
+  display:flex;
+  flex-direction:column;
+  gap:35px;
+}
+
+/* 👇 ESTILO TIPO TARJETA (como tu imagen) */
+.sections > *{
   background:var(--glass);
   padding:40px;
   border-radius:25px;
   border:1px solid var(--glass-border);
-  margin-bottom:20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para el efecto */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
-section h2{
+
+/* TITULOS */
+h1{
+  font-size:60px;
+  font-weight:800;
+}
+
+.sections h2{
   font-size:24px;
   margin-bottom:10px;
-  color:var(--text-main);
 }
-section p, section ul{
+
+/* TEXTO */
+.sections p,
+.sections ul{
   color:var(--text-muted);
   line-height:1.7;
 }
+
+/* LISTAS */
 ul{
   padding-left:20px;
 }
+
 ul li{
   margin-bottom:8px;
 }
-img{
+
+/* IMAGEN */
+.sections img{
   width:100%;
-  max-width:650px;
+  max-width:700px;
   display:block;
   margin:20px auto;
   border-radius:16px;
 }
+
+/* TABLA */
 table{
   width:100%;
   border-collapse:collapse;
   margin-top:20px;
 }
+
 th,td{
   border:1px solid var(--glass-border);
   padding:12px;
 }
+
 th{
   background:rgba(56,189,248,0.1);
 }
+
+/* RESPONSIVE */
 @media (max-width:992px){
   .sidebar{
     width:80px;
     min-width:80px;
   }
+
   .sidebar h2{
     display:none;
   }
+
   .sidebar a{
     font-size:0;
     text-align:center;
   }
+
   .sidebar a::before{
     content:"•";
     font-size:2rem;
     color:var(--primary);
   }
+
   .contenido{
     margin-left:100px;
   }
 }
 </style>
 </head>
+
 <body>
 
 <nav class="sidebar">
@@ -146,9 +190,10 @@ th{
 </nav>
 
 <main class="contenido">
-  {{ content }}
+  <div class="sections">
+    {{ content }}
+  </div>
 </main>
 
 </body>
 </html>
-
